@@ -1,10 +1,12 @@
-
-import os
+bot_code = """
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 import yt_dlp
+import os
 
-BOT_TOKEN = os.environ.get("TUASDSAASFAFA_BOT")
+# Token and Bot Name
+BOT_TOKEN = "8436279336:AAEBL5FveHlwdfuGx8w6wCYAfDgaxP5O6zg"
+BOT_NAME = "@Tuasdsaasfafa_bot"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
@@ -41,3 +43,10 @@ if __name__ == "__main__":
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
     app.run_polling()
+"""
+
+file_path = "/mnt/data/bot_Tuasdsaasfafa.py"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(bot_code)
+
+file_path
