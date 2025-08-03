@@ -7,7 +7,7 @@ import os
 
 # ✅ التوكن الخاص بالبوت
 BOT_TOKEN = "8390487459:AAHwi0j41iUAlhzChqy95YLj029q5IpPPV8"
-BOT_NAME = "@kfdsjhfds_bot"
+BOT_NAME = "kfdsjhfds_bot"
 
 # 📥 عند استقبال رسالة تحتوي على رابط
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
