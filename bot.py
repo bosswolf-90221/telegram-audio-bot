@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 import yt_dlp
 
-TUASDSAASFAFA_BOT = os.getenv("TUASDSAASFAFA_BOT")
+BOT_TOKEN = os.environ.get("TUASDSAASFAFA_BOT")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
